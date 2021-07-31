@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Microblog</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css"/>
+    <link href="style/form.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="style/messages.css" type="text/css">
+</head>
+<body>
+    <header>
+        <a href="/" id="title">Microblog</a>
+    </header>
+    
+    <form class="complex_form" id="create_message_form">
+      <div class="form_title">Post a message</div>
+      <input type="text" class="form_element" placeholder="Enter your name" name="user_name" required/>
+      <!--w3schools.com/tags/tag_textarea.asp-->
+      <textarea class="form_element" placeholder="Enter your message" name="message" rows="5" required></textarea>
+      
+      <!-- https://www.w3schools.com/howto/howto_css_text_buttons.asp-->
+      <button class="btn" type="submit">Post your message</button>
+    </form>
+
+    <div id="messages" class="messages">
+        <!--https://www.w3schools.com/html/html_images.asp
+            http://html5doctor.com/the-figure-figcaption-elements/-->
+        <figure class="messageContent">
+            
+            <img src="uploads/accountant.png" class="userIcon">
+            <figcaption><label for="user" class="username">Accountant</label></figcaption>
+        </figure>
+        <p class="messageText">This Microblog kinda sendinggg</p>
+
+        <label for="upvote" >0</label>
+        <div class="upvote" class=icon></div>
+
+        <label for="downvote" >0</label>
+        <div class="downvote" class=icon></div>
+
+        <div class="delete" class=icon></div>
+    </div>
+    <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr-->
+    <hr>
+
+    <div id="messages" class="messages">
+        <!--https://www.w3schools.com/html/html_images.asp
+            http://html5doctor.com/the-figure-figcaption-elements/-->
+        <figure class="messageContent">
+            
+            <img src="uploads/barista.png" class="userIcon">
+            <figcaption><label for="user" class="username">Barista</label></figcaption>
+        </figure>
+        <p class="messageText">Yupppppp</p>
+
+        <label for="upvote" >0</label>
+        <div class="upvote" class=icon></div>
+
+        <label for="downvote" >0</label>
+        <div class="downvote" class=icon></div>
+
+        <div class="delete" class=icon></div>
+    </div>
+    <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr-->
+    <hr>
+    
+    <footer>
+        <a href='/credits.html'>credits</a>
+    </footer>
+</body>
+</html>

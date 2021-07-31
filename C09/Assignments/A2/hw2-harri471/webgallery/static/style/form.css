@@ -1,0 +1,77 @@
+/*https://www.w3schools.com/css/css_form.asp
+*/
+
+.complex_form{
+    margin-top:20px;
+    padding:20px 10px 10px 10px;
+    display:flex;
+    flex-direction: column;
+}
+
+.complex_form .form_title{
+    font-size:30px;
+	font-weight:bold;
+	/*https://www.w3schools.com/cssref/pr_font_font-style.asp*/
+    font-style: italic;
+    margin:-20px -10px 10px 0px;
+    color: rgb(122, 0, 223);
+    
+}
+
+input {
+    width: 100%;
+}
+
+.gallery_form_title {
+	display: flex;
+    flex-wrap: wrap;
+	width: 100%;
+	align-items: flex-end;
+	margin-top: -20px;
+}
+
+.gallery_form_title .show_hide_button {
+	margin-left: auto;
+	margin-bottom: 10px;
+}
+
+.complex_form .form_element{
+     margin-bottom:10px;
+     font-size: 20px;
+     font-style: italic;
+     padding:5px 10px 5px 10px;
+     background-color: rgb(255, 240, 245);
+}
+
+/* This snippet of code was generated using: http://css3buttongenerator.com/ */
+
+.btn {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #ffccff 100%);
+	background-color:#f9f9f9;
+	border:2px solid #ffb2ff;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:12px 34px;
+	text-decoration:none;
+	text-shadow:0px 2px 3px #ffffff;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #ffccff 5%, #f9f9f9 100%);
+	background-color:#ffccff;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+/*
+https://www.w3schools.com/cssref/sel_disabled.asp
+*/
+.btn:disabled {
+	background:#cacaca;
+}
