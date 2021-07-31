@@ -1,0 +1,13 @@
+.user_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_button {
+    margin: 100px;
+    flex-basis: auto;
+    width: fit-content
+}
+

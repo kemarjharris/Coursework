@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Pink Image Gallery</title>
+    <link href="/style/form.css" rel="stylesheet" type="text/css"/>
+    <link href="/style/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/style/image.css" rel="stylesheet" type="text/css"/>
+    <link href="/style/comments.css" rel="stylesheet" type="text/css"/>
+    
+  </head>
+  <body>
+    <div class="page_header">
+      <h1 class="logged_in_page_title">Pink Image Gallery</h1>
+      <button id="signout_button" class="btn header_btn">Sign out</button>
+    </div>
+      
+    <div class = "gallery_form_title"> 
+      <button class ="btn show_hide_button" type = "button" id = "show_button" style="display:none">Show</button>
+    </div>
+
+    <form class="complex_form" id="image_form" enctype="multipart/form-data">
+      <div class = "gallery_form_title"> 
+        <p class="form_title">Add an image to your gallery!</p>
+        <button class="btn show_hide_button" type="button" id = "hide_button">Hide</button>
+      </div>
+      <input type="text" class="form_element" placeholder="Enter the image title" id="image_title" required/>
+      <input type="file" class="form_element" id = "image_file" accept="image/*" required/>
+
+      <!-- https://www.w3schools.com/howto/howto_css_text_buttons.asp-->
+      <button class="btn" type="submit" id = image_submit>Post your image</button>
+    </form>
+    
+    <div id="no_Images"></div>
+
+    <div id="content_section">
+    
+      <div id = "main_image" class = "image_container"></div>
+      
+      <div id = "image_info"></div>
+
+      <!--https://stackoverflow.com/questions/1992114/how-do-you-create-a-hidden-div-that-doesnt-create-a-line-break-or-horizontal-sp-->
+      <div id = "comment_section">
+        <form class="complex_form" id="comment_form">
+          <div class="form_title">Add a comment to this image!</div>
+            <input type="text" class="form_element" placeholder="Say something about this image" id="comment_text" required/>
+          <!-- https://www.w3schools.com/howto/howto_css_text_buttons.asp-->
+          <button class="btn" type="submit">Post comment</button>
+        </form>
+        
+        <div id="comment_block"></div>
+        
+        <div id = "comment_navigation">
+          <button class="btn" type="button" id ="prev_ten">Previous 10</button>
+          <button class="btn" type="button" id = "next_ten">Next 10</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href='/credits.html'>credits</a>
+      <script src="/js/api.js"></script>
+      <script src="/js/gallery.js"></script>
+    </footer>
+  </body>
+</html>

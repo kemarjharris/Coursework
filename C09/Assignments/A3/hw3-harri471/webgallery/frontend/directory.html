@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Pink Image Gallery</title>
+    <link href="style/form.css" rel="stylesheet" type="text/css"/>
+    <link href="style/main.css" rel="stylesheet" type="text/css"/>
+    <link href="style/index.css" rel="stylesheet" type="text/css"/>
+    <link href="style/directory.css" rel="stylesheet" type="text/css"/>
+    
+  </head>
+  <body>
+    <div class="page_header">
+        <h1 class="logged_in_page_title">Pink Image Gallery</h1>
+        <a href="/signout/" id="signout_button" class="btn header_btn">Sign out</a>
+    </div>
+
+    <!--input type="text" class="form_element" placeholder="Search for a user" required/-->
+
+    <div id = "user_navigation">
+      <button class="btn" type="button" id ="user_prev_ten">Previous 10</button>
+      <button class="btn" type="button" id = "user_next_ten">Next 10</button>
+    </div>
+
+    <ul id="users"></ul>
+
+    <footer>
+      <a href='/credits.html'>credits</a>
+      <script src="js/api.js"></script>
+      <script src="js/directory.js"></script>
+    </footer>
+  </body>
+</html>
