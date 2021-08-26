@@ -1,4 +1,4 @@
-The respository for the work I did in the Software Engineering program and University of Toronto Scarborough.
+The respository for the work I did in the Software Engineering program at University of Toronto Scarborough.
 
 Courses:  
 A08 - Introduction to Computer Science I  
